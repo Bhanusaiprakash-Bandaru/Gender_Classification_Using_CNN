@@ -83,7 +83,7 @@ The goal of this project is to build a deep learning model that can:
 ## 🔍 Prediction Demo
 
 ```python
-def predict_image(path, model):
+def predict_image(path):
     original = Image.open(path).convert("RGB")
 
     img = original.resize((96, 96))
@@ -92,10 +92,13 @@ def predict_image(path, model):
 
     pred = model.predict(img)[0][0]
 
-    # Adjusted output (model learned reversed mapping)
-    pred = 1 - pred
+    if pred < 0.35:
+        gender = "Male"
+    elif pred > 0.55:
+        gender = "Female"
+    else:
+        gender = "Uncertain"
 
-    gender = "Male" if pred < 0.5 else "Female"
     confidence = pred if pred > 0.5 else 1 - pred
 
     plt.imshow(original)
