@@ -1,5 +1,12 @@
 # 🧠 Gender Classification using CNN
 
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.10-orange)
+![Keras](https://img.shields.io/badge/Keras-DeepLearning-red)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+
 This project implements a **Convolutional Neural Network (CNN)** to classify gender from facial images using the UTKFace dataset.
 
 ---
