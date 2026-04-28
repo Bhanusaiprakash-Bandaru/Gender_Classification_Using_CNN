@@ -112,7 +112,7 @@ def predict_image(path):
 ### 🔹 Sample Prediction 1
 ![Prediction 1](gender_classification_Output_1.png)
 
-- Model Prediction: Female  
+- Model Prediction: Male  
 - Confidence: ~0.71  
 - Observation: Clear frontal face, good lighting → correct prediction  
 
