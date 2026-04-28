@@ -105,6 +105,7 @@ def predict_image(path):
     plt.axis("off")
     plt.title(f"{gender} ({confidence:.2f})")
     plt.show()
+```
 
 ## 📸 Results & Predictions
 
