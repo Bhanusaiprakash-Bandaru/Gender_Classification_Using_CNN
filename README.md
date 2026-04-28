@@ -105,3 +105,33 @@ def predict_image(path):
     plt.axis("off")
     plt.title(f"{gender} ({confidence:.2f})")
     plt.show()
+
+## 📸 Results & Predictions
+
+### 🔹 Sample Prediction 1
+![Prediction 1](gender_classification_Output_1.png)
+
+- Model Prediction: Female  
+- Confidence: ~0.71  
+- Observation: Clear frontal face, good lighting → correct prediction  
+
+---
+
+### 🔹 Sample Prediction 2
+![Prediction 2](gender_classification_Output_2.png)
+
+- Model Prediction: Female  
+- Confidence: ~0.73  
+- Observation: Works well on high-quality images  
+
+---
+
+### 🔹 Key Insight
+
+- Model performs well on:
+  - Frontal faces  
+  - Good lighting  
+
+- Model struggles with:
+  - Background noise  
+  - Non-frontal angles  
